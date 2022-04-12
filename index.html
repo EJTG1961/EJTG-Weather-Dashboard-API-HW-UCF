@@ -43,16 +43,16 @@
           <form class="history"></form>
         </div>
         <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+          <br>
         
-          <a href="#" class="list-group-item list-group-item-action list-group-item-primary">New York</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-primary" >New York</a>
           <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Boston</a>
           <a href="#" class="list-group-item list-group-item-action list-group-item-success">Atlanta</a>
           <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Dallas</a>
           <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Seattle</a>
           <a href="#" class="list-group-item list-group-item-action list-group-item-info">San Francisco</a>
           <a href="#" class="list-group-item list-group-item-action list-group-item-light">Chicago</a>
-          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">los Angeles</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Los Angeles</a>
         </div>
       </aside>
 
@@ -60,70 +60,72 @@
         <div class="cityInfo">
           <h2 class="searchedCity">City (DD/MM/YYYY): <span id="weather-searchCity"></span></h2>
           <h3 class="date"></h3>
-          <img id="weather-icon" alt="">
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
           <div id="searchedCity-container" class="searchCity-info">
-            <p class="temp">Temperature: </p>
-            <p class="wind">Wind: </p>
-            <p class="humidity">Humidity: </p>
-            <p class="uvIndex">UV Index: </p>
+            <p class="temp">Temperature: <span id="temp-forecast"></span></p>
+            <p class="wind">Wind: <span id="wind-forecast"></span></p>
+            <p class="humidity">Humidity: <span id="humidity-forecast"></span></p>
+            <p class="uvIndex">UV Index: <span id="UV-forecast"></span></p>
           </div>
         </div>
+        
         <h3>5 Day Forecast</h3>
-        <div class="card-group">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
+        <div class="row">
+        <div class="col card-group fiveDay-1">
+          <div class="card" >
+             <div class="card-body">
               <h5 class="card-title">(DD/MM/YYYY)</h5>
-              <h6 class="card-subtitle mb-2 text-muted">🌤</h6>
-              <p class="card-text">Temp</p>
-              <p class="card-text">Wind</p>
-              <p class="card-text">Humidity</p>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+              <p class="card-text">Temp: <span id="temp-forecast">74F</span></p>
+              <p class="card-text">Wind: <span id="wind-forecast">6 mph</span></p>
+              <p class="card-text">Humidity: <span id="humidity-forecast">54%</span></p>
             </div>
           </div>
-        <div class="card-group">
-          <div class="card" style="width: 18rem;">
+        </div>
+        <div class="col card-group fiveDay-2">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">(DD/MM/YYYY)</h5>
-              <h6 class="card-subtitle mb-2 text-muted">🌤</h6>
-              <p class="card-text">Temp</p>
-              <p class="card-text">Wind</p>
-              <p class="card-text">Humidity</p>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+              <p class="card-text">Temp: <span id="temp-forecast"></span></p>
+              <p class="card-text">Wind: <span id="wind-forecast"></span></p>
+              <p class="card-text">Humidity: <span id="humidity-forecast"></span></p>
             </div>
           </div>
-        <div class="card-group">
-          <div class="card" style="width: 18rem;">
+        </div>
+        <div class="col card-group fiveDay-3">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">(DD/MM/YYYY)</h5>
-              <h6 class="card-subtitle mb-2 text-muted">🌤</h6>
-              <p class="card-text">Temp</p>
-              <p class="card-text">Wind</p>
-              <p class="card-text">Humidity</p>
-            </div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+              <p class="card-text">Temp: <span id="temp-forecast"></span></p>
+              <p class="card-text">Wind: <span id="wind-forecast"></span></p>
+              <p class="card-text">Humidity: <span id="humidity-forecast"></span></p>
           </div>
-        <div class="card-group">
-          <div class="card" style="width: 18rem;">
+          </div>
+        </div>
+         <div class="col card-group fiveDay-4">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">(DD/MM/YYYY)</h5>
-              <h6 class="card-subtitle mb-2 text-muted">🌤</h6>
-              <p class="card-text">Temp</p>
-              <p class="card-text">Wind</p>
-              <p class="card-text">Humidity</p>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+              <p class="card-text">Temp: <span id="temp-forecast"></span></p>
+              <p class="card-text">Wind: <span id="wind-forecast"></span></p>
+              <p class="card-text">Humidity: <span id="humidity-forecast"></span></p>
             </div>
-          </div>
-        <div class="card-group">
-          <div class="card" style="width: 18rem;">
+          </div> 
+         </div>
+        <div class="col card-group fiveDay-5">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">(DD/MM/YYYY)</h5>
-              <h6 class="card-subtitle mb-2 text-muted">🌤</h6>
-              <p class="card-text">Temp</p>
-              <p class="card-text">Wind</p>
-              <p class="card-text">Humidity</p>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+              <p class="card-text">Temp: <span id="temp-forecast" ></span></p>
+              <p class="card-text">Wind: <span id="wind-forecast"></span></p>
+              <p class="card-text">Humidity: <span id="humidity-forecast"></span></p>
             </div>
           </div>
-          <!-- <card class="card fiveDay-1"></card> -->
-          <!-- <card class="card fiveDay-2"></card>
-          <card class="card fiveDay-3"></card>
-          <card class="card fiveDay-4"></card>
-          <card class="card fiveDay-5"></card> -->
+        </div>
         </div>
       </section>
 

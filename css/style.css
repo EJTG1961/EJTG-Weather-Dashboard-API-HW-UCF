@@ -85,13 +85,17 @@
       
   
   }
+
+  .flex-card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
   
-  .card {
-      flex: 1;
-      justify-content: space-around;
+     .card {
       color: #fff;
       background-color: #03045e;
-      padding: 5px;
-      margin: 10px;
+      padding: 10px;
+      margin: 20px;
       
-  }
+  } 
